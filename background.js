@@ -3,7 +3,7 @@ function handleMessage(request, sender, sendResponse) {
     const url = `https://www.google.co.jp/search?q=${encodeURIComponent(
       request.message
     )}`;
-    chrome.tabs.create({ url: url }, tab => {});
+    browser.tabs.create({ url: url }, tab => {});
   }
 }
 
