@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "GoogleOpenShortcut",
+  "version": "1.0",
+  "description": "Just search selected words by shortcut key 'ctrl+g'",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["open.js"]
+    }
+  ]
+}
